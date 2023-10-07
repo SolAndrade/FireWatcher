@@ -53,17 +53,16 @@ body {
     align-items: center;
   }
   
-  .map-menu-types {
+  .map-menu-types, .map-menu-view {
     display: flex;
+    margin: 10px 0px;
   }
   
-  .map-menu-view {
-    display: flex;
-  }
   .map-menu-view-button {
     width: 100%;
     align-content: center;
   }
+
   .button-map-menu-view {
     width:100%;
     margin: auto;
@@ -93,6 +92,8 @@ body {
   
   .button-map-menu-types:hover {
     background-color: var(--secondary);
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 5%; /* Make the button round */
   }
   
   .map-menu-view {
@@ -100,7 +101,7 @@ body {
   }
   
   .map-menu-view, .button-map-menu-view {
-    background-color: var(--light-gray);
+    background-color: white;
     color: black;
     padding: 10px 20px;
     border: none;
@@ -108,7 +109,8 @@ body {
   }
   
   .button-map-menu-view:hover {
-    background-color: var(--light);
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 5%; /* Make the button round */
   }
   
   
@@ -128,10 +130,11 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 3%; /* Make the button round */
     }
       
       .smaller-image {
-        max-width: 80%; /* Adjust the maximum width to make it smaller */
+        max-width: 90%; /* Adjust the maximum width to make it smaller */
         height: auto;
       }
       

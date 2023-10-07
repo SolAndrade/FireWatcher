@@ -39,3 +39,8 @@ a{
     border-top-left-radius: 0;
 }
 
+img {
+    margin: auto;
+    width: 50%;
+
+}

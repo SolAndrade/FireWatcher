@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiService } from '../services/api.service'; // Update the path
+import { ApiService } from '../../../services/api.service'; // Update the path
 import { HomeService } from 'src/app/services/home.service';
 import { Router } from '@angular/router';
 
@@ -71,6 +71,6 @@ export class PopUpStartComponent {
 
   onClickQuit(): void {
     this.homeService.setPopupState(false);
-    this.router.navigate(['map']);
+    this.router.navigate(['/Home/home-map']);
   }
 }

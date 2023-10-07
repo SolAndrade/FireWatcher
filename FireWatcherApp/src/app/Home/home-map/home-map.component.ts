@@ -28,21 +28,26 @@ export class HomeMapComponent {
 
   showRiskView(): void{
     this.img = '../assets/img/risks.jpeg'
+    this.savedImg = '';
     this.info = null;
   }
 
   showFireActivityView(): void{
     this.img = '../assets/img/activity.jpeg'
+    this.savedImg = '';
     this.info = null;
   }
 
   showInactiveFiresView(): void{
     this.img = '../assets/img/inactive.jpeg'
+    this.savedImg = '';
     this.info = null;
   }
   
   showImageView(): void{
-    this.img = this.savedImg;
+    if(this.savedImg != ''){
+      this.img = this.savedImg;
+    }
     this.info = null;
   }
 

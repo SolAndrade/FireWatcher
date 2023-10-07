@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeMapComponent } from './Home/home-map/home-map.component';
 import { HomeInfoComponent } from './Home/home-info/home-info.component';
 import { HomeReportComponent } from './Home/home-report/home-report.component';
-import { PopUpStartComponent } from './pop-up-start/pop-up-start.component';
+import { PopUpStartComponent } from './Home/home-map/pop-up-start/pop-up-start.component';
 import { PopUpReportComponent } from './Home/home-report/pop-up-report/pop-up-report.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -16,6 +16,8 @@ import { InfoFactorsComponent } from './Home/home-info/home-info-section/home-in
 import { InfoHowToActComponent } from './Home/home-info/home-info-section/home-info-section-how_to_act/how-to-act.component';
 import { InfoPreventionComponent } from './Home/home-info/home-info-section/home-info-section-prevention/prevention.component';
 import { InfoReportComponent } from './Home/home-info/home-info-section/home-info-section-report/report.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { InfoReportComponent } from './Home/home-info/home-info-section/home-inf
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
