@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './prevention.component.html',
   styleUrls: ['./prevention.component.css']
 })
-export class PreventionComponent {
+export class InfoPreventionComponent {
 
 }

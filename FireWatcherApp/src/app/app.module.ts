@@ -12,10 +12,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeInfoSectionComponent } from './Home/home-info/home-info-section/home-info-section.component';
-import { PreventionComponent } from './Home/home-info/home-info-section/home-info-section-prevention/prevention.component';
-import { HowToActComponent } from './Home/home-info/home-info-section/home-info-section-how_to_act/how-to-act.component';
-import { FactorsComponent } from './Home/home-info/home-info-section/home-info-section-factors/factors.component';
-import { ReportComponent } from './Home/home-info/home-info-section/home-info-section-report/report.component';
+import { InfoFactorsComponent } from './Home/home-info/home-info-section/home-info-section-factors/factors.component';
+import { InfoHowToActComponent } from './Home/home-info/home-info-section/home-info-section-how_to_act/how-to-act.component';
+import { InfoPreventionComponent } from './Home/home-info/home-info-section/home-info-section-prevention/prevention.component';
+import { InfoReportComponent } from './Home/home-info/home-info-section/home-info-section-report/report.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +28,10 @@ import { ReportComponent } from './Home/home-info/home-info-section/home-info-se
     HeaderComponent,
     NavbarComponent,
     HomeInfoSectionComponent,
-    PreventionComponent,
-    ReportComponent,
-    HowToActComponent,
-    FactorsComponent
+    InfoFactorsComponent,
+    InfoHowToActComponent,
+    InfoPreventionComponent,
+    InfoReportComponent
   ],
   imports: [
     BrowserModule,
