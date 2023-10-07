@@ -32,3 +32,12 @@ body{
     border: 0.1rem solid var(--dark);
     border-radius: 0.2rem;
 }
+
+.container-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
