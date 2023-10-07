@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --primary: #C02B2C;
+    --secondary: #DC4149;
+    --light: #ebebeb;
+    --light-gray:   #e9e6e6;
+    --dark: #090909;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Poppins';
+}
+
+.button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 0.1rem solid var(--dark);
+    border-radius: 0.2rem;
+}
