@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { ApiService } from '../api.service'; // Update the path
+import { ApiService } from '../services/api.service'; // Update the path
+import { HomeService } from 'src/app/services/home.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -12,16 +14,21 @@ export class PopUpStartComponent {
   componentDisplayed = false;
   area: any;
   date: any;
+  probabilityOfFire: any;
+  lastFireDate: any;
+  distanceFromZone: any;
 
-  constructor(private apiService: ApiService) { }
-
-  private getFireProbability(): void {
-    this.apiService
-  }
+  constructor(
+    private apiService: ApiService,
+    private homeService: HomeService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     // Call the getData function when the component is initialized
     //this.getData('world', '2023-10-07');
+    this.getFireProbability();
+    this.getLastFireDate();
   }
 
   getData(area: string, date: string): void {
@@ -31,14 +38,39 @@ export class PopUpStartComponent {
       },
       error => {
         console.error('Error fetching location statistics:', error);
-      },
-      () => {
-        this.componentDisplayed = true;  // Set the flag to true after the component is displayed
       }
     );
   }
 
-  displayComponent() {
-    this.componentDisplayed = false;  // Reset the flag to allow displaying the component again
+  getFireProbability(): void {
+    /*this.homeService.getFireProbability().subscribe(
+      (prob: any) => {
+        this.probabilityOfFire = prob;
+      }
+    )*/
+    this.probabilityOfFire = 50
+  }
+
+  getLastFireDate(): void {
+    /*this.homeService.getLastFireDate().subscribe(
+      (date: any) => {
+        this.lastFireDate = date;
+      }
+    )*/
+    this.lastFireDate = 10;
+  }
+  
+  getDistanceFromZone(): void {
+    /*this.homeService.getDistanceFromZone().subscribe(
+      (distance: any) => {
+        this.distanceFromZone = distance;
+      }
+    )*/
+    this.distanceFromZone = 20;
+  }
+
+  onClickQuit(): void {
+    this.homeService.setPopupState(false);
+    this.router.navigate(['map']);
   }
 }

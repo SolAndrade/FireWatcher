@@ -1,1 +1,45 @@
 <p>home-map works!</p>
+
+<!--<div *ngIf="popup">
+    <app-pop-up-start></app-pop-up-start>
+</div>-->
+
+<!-- <app-pop-up-start *ngIf="popup"></app-pop-up-start>-->
+
+<div class="home-map-component">
+    <div class="map-menu">
+        <div class="map-menu-types">
+            <div class="map-menu-types-risk">
+                <button class="button-map-menu-types" (click)="showRiskView()">Risk</button>
+            </div>
+            <div class="map-menu-types-activity">
+                <button class="button-map-menu-types" (click)="showFireActivityView()">Fire Activity</button>
+            </div>
+            <div class="map-menu-types-inactive">
+                <button class="button-map-menu-types" (click)="showInactiveFiresView()">Inactive Fires</button>
+            </div>
+        </div>
+        <div class="map-menu-view">
+            <div class="map-menu-view-button">
+                <button class="button-map-menu-view" (click)="showImageView()">Map</button>
+            </div>
+            <div class="map-menu-view-button">
+                <button class="button-map-menu-view" (click)="showInfoView()">Info</button>
+            </div>
+        </div>
+    </div>
+    <div class="map-img" *ngIf="img">
+        <img [src]="img" alt="img" class="smaller-image with-shadow">
+    </div>
+    <div class="map-info" *ngIf="info">
+        <h3>Why does the risk of fire increase?</h3>
+        <p>
+            One of the causes of the high risk of fires in Spain is the high temperatures. A <strong>new heat wave</strong> is expected during these days. Thermometers are around 40º C in some parts of Spain which, <strong>together with the drought</strong> and lack of precipitation, <strong>increases the probability of fires.</strong>
+            Several provinces are under heat warnings this Tuesday at risk due to high temperatures and <strong>they could reach up to 42ºC</strong>, according to the prediction of the State Meteorological Agency (AEMET).
+        </p>
+        <h3>Measures to extend fire prevention and extinction throughout the year</h3>
+        <p>
+            The Council of Ministers has approved a Royal Decree with urgent measures to <u>improve the prevention and extinction of forest fires</u> throughout the year. Minister Teresa Ribera assures that the territories must have annual planning.
+        </p>
+    </div>
+</div>

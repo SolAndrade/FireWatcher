@@ -1,0 +1,144 @@
+/*img {
+    width: 100%;
+    margin: auto;
+}
+
+.map-menu {
+    margin: auto;
+    width: 100%;
+}
+
+.map-menu-types {
+    display: flex;
+    width: 100%;
+}
+
+.map-menu-view {
+    display: flex;
+    width: 100%;
+}
+
+.button-map-menu-types{
+    background-color: var(--primary);
+    color: white;
+}
+
+.button-map-menu-types:hover{
+    background-color: var(--secondary);
+}
+
+.button-map-menu-view{
+    background-color: var(--ligt);
+}
+
+.button-map-menu-view:hover{
+    background-color: var(--light-gray);
+}*/
+
+img {
+    width: 100%;
+}
+
+body {
+    width:100%;
+}
+.home-map-component {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Make the component expand to the full viewport height */
+  }
+  
+  .map-menu {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .map-menu-types {
+    display: flex;
+  }
+  
+  .map-menu-view {
+    display: flex;
+  }
+  .map-menu-view-button {
+    width: 100%;
+    align-content: center;
+  }
+  .button-map-menu-view {
+    width:100%;
+    margin: auto;
+  }
+
+  .map-menu-types-inactive, .map-menu-types-activity {
+    width: 70%;
+    align-content: center;
+  }
+
+  .map-menu-types-risk {
+    width: 30%;
+    align-content: center;
+  }
+
+  .button-map-menu-types {
+    width: 100%;
+  }
+  
+  .map-menu-types, .button-map-menu-types {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-map-menu-types:hover {
+    background-color: var(--secondary);
+  }
+  
+  .map-menu-view {
+    display: flex;
+  }
+  
+  .map-menu-view, .button-map-menu-view {
+    background-color: var(--light-gray);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-map-menu-view:hover {
+    background-color: var(--light);
+  }
+  
+  
+  .map-info {
+    padding: 10px;
+}
+
+.map-info p {
+    text-align: justify;
+  }
+  
+  /*IMG*/
+    .map-img img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      
+      .smaller-image {
+        max-width: 80%; /* Adjust the maximum width to make it smaller */
+        height: auto;
+      }
+      
+      .with-shadow {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
+      }
+      
+  
+  /* Add your other CSS styles if needed */
+  

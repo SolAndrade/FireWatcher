@@ -20,3 +20,30 @@
         <app-home-map></app-home-map>
     </ng-template>
 </div>-->
+<div>
+    <ng-container *ngTemplateOutlet="pop_up_probability"></ng-container>
+</div>
+
+<ng-template #pop_up_probability>
+    <div class="container-pop-up">
+        <button class="button button-quit" (click)="onClickQuit()">X</button>
+        <h1 class="pop-up-main-text">There is a {{ probabilityOfFire }}% probability of fire in your zone.</h1>
+        <button class="button button-accept" (click)="onClickQuit()">Accept</button>
+    </div>
+</ng-template>
+
+<ng-template #pop_up_last_fire>
+    <div class="container-pop-up">
+        <button class="button button-quit" (click)="onClickQuit()">X</button>
+        <h1 class="pop-up-main-text">There is a fire registered in your zone {{ lastFireDate }} days ago, be careful.</h1>
+        <button class="button button-accept" (click)="onClickQuit()">Accept</button>
+    </div>
+</ng-template>
+
+<ng-template #pop_up_actual_fire>
+    <div class="container-pop-up">
+        <button class="button button-quit" (click)="onClickQuit()">X</button>
+        <h1 class="pop-up-main-text">There is a fire spreading {{ distanceFromZone }}km from your zone.</h1>
+        <button class="button button-accept" (click)="onClickQuit()">Accept</button>
+    </div>
+</ng-template>
