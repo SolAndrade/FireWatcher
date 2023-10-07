@@ -45,14 +45,6 @@ a{
     border-top-left-radius: 0;
 }
 
-.nav-item:hover {
-    box-shadow: 0 0 20px rgba(192, 43, 44, 0.4);
-}
-  
-  .nav-item:active {
-    box-shadow: 0 0 15px rgba(192, 43, 44, 0.5);
-  }
-
 img {
     margin: auto;
     width: 35%;
