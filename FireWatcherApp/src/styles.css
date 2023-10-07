@@ -32,3 +32,10 @@ body{
     border: 0.1rem solid var(--dark);
     border-radius: 0.2rem;
 }
+
+.container-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
