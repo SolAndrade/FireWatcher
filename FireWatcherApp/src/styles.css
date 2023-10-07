@@ -26,6 +26,9 @@ body{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
 .button {
     padding: 0.5rem;
     margin: 0.5rem;
