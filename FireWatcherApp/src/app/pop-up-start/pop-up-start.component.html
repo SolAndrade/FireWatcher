@@ -1,1 +1,22 @@
-<p>pop-up-start works!</p>
+
+
+<!--<div>
+    <h2>Get Data</h2>
+    <form #dateForm="ngForm" (ngSubmit)="getData(dateForm.value.area, dateForm.value.date)">
+      <label for="login">Enter Area:</label>
+      <input type="text" id="area" name="area" ngModel required>
+      <label for="login">Enter Date:</label>
+      <input type="text" id="date" name="date" ngModel required>
+      <button type="submit">Get Data</button>
+    </form>
+  
+    <div *ngIf="data; else homeMap">
+        <li *ngFor="let item of data">
+            {{ item.location }}
+        </li>
+        <pre>{{ data | json }}</pre>
+      </div>
+    <ng-template #homeMap>
+        <app-home-map></app-home-map>
+    </ng-template>
+</div>-->
