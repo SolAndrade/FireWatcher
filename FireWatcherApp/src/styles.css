@@ -16,6 +16,14 @@
 
 * {
     font-family: 'Poppins';
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+body{
+    margin: 0;
 }
 
 .button {
@@ -23,9 +31,4 @@
     margin: 0.5rem;
     border: 0.1rem solid var(--dark);
     border-radius: 0.2rem;
-}
-
-body {
-    width: 100%;
-    height: 100%;
 }

@@ -1,0 +1,7 @@
+.container-home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+}

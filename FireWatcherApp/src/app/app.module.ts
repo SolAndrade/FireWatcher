@@ -11,6 +11,11 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HomeInfoSectionComponent } from './Home/home-info/home-info-section/home-info-section.component';
+import { InfoFactorsComponent } from './Home/home-info/home-info-section/home-info-section-factors/factors.component';
+import { InfoHowToActComponent } from './Home/home-info/home-info-section/home-info-section-how_to_act/how-to-act.component';
+import { InfoPreventionComponent } from './Home/home-info/home-info-section/home-info-section-prevention/prevention.component';
+import { InfoReportComponent } from './Home/home-info/home-info-section/home-info-section-report/report.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { FormsModule } from '@angular/forms';
     PopUpStartComponent,
     PopUpReportComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeInfoSectionComponent,
+    InfoFactorsComponent,
+    InfoHowToActComponent,
+    InfoPreventionComponent,
+    InfoReportComponent
   ],
   imports: [
     BrowserModule,
