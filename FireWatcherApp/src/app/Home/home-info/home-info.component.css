@@ -6,3 +6,8 @@
     gap: 1rem;
     padding: 0.5rem;
 }
+
+.container-text{
+    text-align: justify;
+    padding: 0.5rem;
+}
