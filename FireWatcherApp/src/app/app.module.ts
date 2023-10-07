@@ -6,7 +6,11 @@ import { HomeMapComponent } from './Home/home-map/home-map.component';
 import { HomeInfoComponent } from './Home/home-info/home-info.component';
 import { HomeReportComponent } from './Home/home-report/home-report.component';
 import { PopUpStartComponent } from './pop-up-start/pop-up-start.component';
-import { PopUpReportComponent } from './pop-up-report/pop-up-report.component';
+import { PopUpReportComponent } from './Home/home-report/pop-up-report/pop-up-report.component';
+import { HeaderComponent } from './header/header.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
