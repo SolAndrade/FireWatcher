@@ -8,6 +8,8 @@ import { HomeInfoComponent } from './Home/home-info/home-info.component';
 import { HomeReportComponent } from './Home/home-report/home-report.component';
 import { PopUpStartComponent } from './pop-up-start/pop-up-start.component';
 import { PopUpReportComponent } from './pop-up-report/pop-up-report.component';
+import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PopUpReportComponent } from './pop-up-report/pop-up-report.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
