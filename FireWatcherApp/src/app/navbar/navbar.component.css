@@ -2,10 +2,12 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 10vh;
     margin-top: auto;
 }
 
 ul{
+    height: 100%;
     padding: 0;
     margin: 0;
     display: flex;
@@ -14,9 +16,10 @@ ul{
 
 .nav-item{
     width: calc(100% / 3);
+    height: 100%;
     padding: 1rem;
-    
-    border: var(--dark) solid 1px;
+    vertical-align: center;
+    border:  3px solid var(--light-gray);
     text-align: center;
 }
 
