@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-report.component.css']
 })
 export class HomeReportComponent {
-
+  sendFireObservation(){
+    if (window.confirm("Are you sure you want to report this fire?")) {
+      
+    }
+  }
 }

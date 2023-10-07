@@ -18,6 +18,11 @@ header a {
     color: var(--dark);
 }
 
+.button-help {
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
 .title{
     font-size: larger;
     font-weight: 600;
