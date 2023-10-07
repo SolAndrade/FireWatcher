@@ -1,51 +1,10 @@
-/*img {
-    width: 100%;
-    margin: auto;
-}
-
-.map-menu {
-    margin: auto;
-    width: 100%;
-}
-
-.map-menu-types {
-    display: flex;
-    width: 100%;
-}
-
-.map-menu-view {
-    display: flex;
-    width: 100%;
-}
-
-.button-map-menu-types{
-    background-color: var(--primary);
-    color: white;
-}
-
-.button-map-menu-types:hover{
-    background-color: var(--secondary);
-}
-
-.button-map-menu-view{
-    background-color: var(--ligt);
-}
-
-.button-map-menu-view:hover{
-    background-color: var(--light-gray);
-}*/
-
-img {
-    width: 100%;
-}
-
 body {
     width:100%;
 }
 .home-map-component {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Make the component expand to the full viewport height */
+    height: auto; /* Make the component expand to the full viewport height */
   }
   
   .map-menu {
@@ -68,31 +27,29 @@ body {
     margin: auto;
   }
 
-  .map-menu-types-inactive, .map-menu-types-activity {
-    width: 70%;
+  .map-menu-types-button {
+    /*width: 70%;*/
     align-content: center;
-  }
-
-  .map-menu-types-risk {
-    width: 30%;
-    align-content: center;
+    width: calc(100% / 3);
   }
 
   .button-map-menu-types {
     width: 100%;
+    
   }
   
   .map-menu-types, .button-map-menu-types {
     background-color: var(--primary);
     color: white;
+    align-items: center;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
   }
   
   .button-map-menu-types:hover {
-    background-color: var(--secondary);
-    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #c43636;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     border-radius: 5%; /* Make the button round */
   }
   
@@ -109,7 +66,7 @@ body {
   }
   
   .button-map-menu-view:hover {
-    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     border-radius: 5%; /* Make the button round */
   }
   
@@ -143,5 +100,69 @@ body {
       }
       
   
-  /* Add your other CSS styles if needed */
+  /* NEWS BOXES */
+  .news-component {
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .news-component-box {
+    justify-content: space-between;
+    display: flex;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box;
+  }
+
+
+  .news-component-info-title {
+    font-weight: bold;
+    font-size: 20px; 
+  }
+  
+  .news-component-info-location {
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .news-component-info-aware {
+    color: red;
+    font-size: 15px;
+  }
+  
+  .news-component-time {
+    display: flex;
+    margin: auto;
+    text-align: right;
+    align-items: center;
+    font-size: 12px;
+    height: 100%;
+  }
+
+    
+    .country-flag img {
+        width: 30px;
+        margin: auto;
+        max-width: 100%; 
+        max-height: 100%; 
+  }
+
+  .news-component-box, .news-component-box {
+    margin-top: 10px;
+  }
+
+  .news-component-info {
+    width: 60%;
+  }
+
+  .country-flag {
+    display: flex;
+    margin: auto;
+    width: 20%;
+  }
   

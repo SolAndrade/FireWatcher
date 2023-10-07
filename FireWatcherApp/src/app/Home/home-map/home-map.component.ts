@@ -33,13 +33,13 @@ export class HomeMapComponent {
   }
 
   showFireActivityView(): void{
-    this.img = '../assets/img/activity.jpeg'
+    this.img = '../assets/img/activity.png'
     this.savedImg = '';
     this.info = null;
   }
 
   showInactiveFiresView(): void{
-    this.img = '../assets/img/inactive.jpeg'
+    this.img = '../assets/img/inactive.png'
     this.savedImg = '';
     this.info = null;
   }

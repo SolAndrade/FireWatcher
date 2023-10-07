@@ -7,13 +7,13 @@
 <div class="home-map-component">
     <div class="map-menu">
         <div class="map-menu-types">
-            <div class="map-menu-types-risk">
+            <div class="map-menu-types-button">
                 <button class="button-map-menu-types" (click)="showRiskView()">Risk</button>
             </div>
-            <div class="map-menu-types-activity">
+            <div class="map-menu-types-button">
                 <button class="button-map-menu-types" (click)="showFireActivityView()">Fire Activity</button>
             </div>
-            <div class="map-menu-types-inactive">
+            <div class="map-menu-types-button">
                 <button class="button-map-menu-types" (click)="showInactiveFiresView()">Inactive Fires</button>
             </div>
         </div>
@@ -29,7 +29,7 @@
     <div class="map-img" *ngIf="img">
         <img [src]="img" alt="img" class="smaller-image with-shadow">
     </div>
-    <div class="map-info" *ngIf="info">
+    <div class="map-info" *ngIf="info; else lastFire">
         <h3>Why does the risk of fire increase?</h3>
         <p>
             One of the causes of the high risk of fires in Spain is the high temperatures. A <strong>new heat wave</strong> is expected during these days. Thermometers are around 40º C in some parts of Spain which, <strong>together with the drought</strong> and lack of precipitation, <strong>increases the probability of fires.</strong>
@@ -40,4 +40,34 @@
             The Council of Ministers has approved a Royal Decree with urgent measures to <u>improve the prevention and extinction of forest fires</u> throughout the year. Minister Teresa Ribera assures that the territories must have annual planning.
         </p>
     </div>
+    <ng-template #lastFire>
+        <div class="news-component">
+            <div class="news-component-box">
+                <div class="country-flag">
+                    <img src="../../../assets/icons/spain.png" alt="">
+                </div>
+                <div class="news-component-info">
+                    <p class="news-component-info-title">Very high forest risk index</p>
+                    <p class="news-component-info-location">Asturias, España</p>
+                    <p class="news-component-info-aware">Very serious</p>
+                </div>
+                <div class="news-component-time">
+                    <p>Right now</p>
+                </div>
+            </div>
+            <div class="news-component-box">
+                <div class="country-flag">
+                    <img src="../../../assets/icons/spain.png" alt="">
+                </div>
+                <div class="news-component-info">
+                    <p class="news-component-info-title">Fire in "El Saler"</p>
+                    <p class="news-component-info-location">Valencia, España</p>
+                    <p class="news-component-info-aware">Very serious</p>
+                </div>
+                <div class="news-component-time">
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+    </ng-template>
 </div>
