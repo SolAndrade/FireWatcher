@@ -19,13 +19,17 @@ ul{
 }
 
 .nav-item{
-    width: calc(100% / 3);
-    height: 100%;
+    display: flex;
     vertical-align: center;
     text-align: center;
-    margin: 10px 0px;
+
+    width: calc(100% / 3);
+    height: 100%;
+
     border-radius: 15px;
     box-shadow: 0 0 0 rgba(192, 43, 44, 0);
+    
+    margin: 10px 0px;
     padding: 5px;
 }
 
