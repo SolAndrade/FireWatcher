@@ -17,6 +17,8 @@ import { InfoHowToActComponent } from './Home/home-info/home-info-section/home-i
 import { InfoPreventionComponent } from './Home/home-info/home-info-section/home-info-section-prevention/prevention.component';
 import { InfoReportComponent } from './Home/home-info/home-info-section/home-info-section-report/report.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HelpDialogComponent } from './header/help-dialog/help-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -33,14 +35,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     InfoFactorsComponent,
     InfoHowToActComponent,
     InfoPreventionComponent,
-    InfoReportComponent
+    InfoReportComponent,
+    HelpDialogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     HttpClientModule,
     FormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
