@@ -1,5 +1,8 @@
-<div class="container-pop-up">
-    <p class="warning-text">Are you sure you want to report this fire?</p>
-    <button class="button button-accept" (click)="onClickAccept()">Accept</button>
-    <button class="button button-cancel" (click)="onClickCancel()">Cancel</button>
-</div>
+<h2 mat-dialog-title>Are you sure you want to report this fire?</h2>
+<mat-dialog-content>
+  <p>Please, take this step seriously.</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button class="button button-accept" (click)="onAccept()">Accept</button>
+    <button class="button button-cancel" (click)="onCancel()">Cancel</button>
+</mat-dialog-actions>

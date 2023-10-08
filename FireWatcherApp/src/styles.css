@@ -44,3 +44,8 @@ a{
     gap: 1rem;
     padding: 0.5rem;
 }
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}

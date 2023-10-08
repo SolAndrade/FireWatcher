@@ -1,7 +1,10 @@
 <div class="container-col">
+    <div class="flex-center">
+        <iframe width="350" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-4.452853202819825%2C36.694577244625556%2C-4.42525863647461%2C36.70593200463924&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+    </div>
     <form class="container-col">
         <label for="observationsText">Observations</label>
         <textarea id="observationsText" name="observations" rows="8"> </textarea>
-        <input class="button button-submit" type="submit" value="Submit" (click)="sendFireObservation()"/>
+        <input class="button button-submit" type="submit" value="Submit" (click)="openDialog()"/>
     </form>
 </div>

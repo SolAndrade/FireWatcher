@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-pop-up-report',
@@ -7,13 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./pop-up-report.component.css']
 })
 export class PopUpReportComponent {
-  constructor(private router: Router) {}
-
-  onClickAccept(){
-    alert("Report sent")
+    constructor(private dialogRef: MatDialogRef<PopUpReportComponent>) { }
+  
+    onDialogClose(): void {
+      this.dialogRef.close();
+    }
+    
+    onAccept(): void {
+      this.dialogRef.close(true); // Puedes pasar true para indicar que se aceptó el diálogo.
+    }
+  
+    onCancel(): void {
+      this.dialogRef.close(false); // Puedes pasar false para indicar que se canceló el diálogo.
+    }
   }
-
-  onClickCancel(){
-    this.router.navigate(['/Home/home-info'])
-  }
-}
+  
