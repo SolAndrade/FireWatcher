@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { PopUpReportComponent } from './pop-up-report/pop-up-report.component';
-import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-home-report',
@@ -8,20 +9,28 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./home-report.component.css']
 })
 export class HomeReportComponent {
+  dialogRef: any = null;
 
-  constructor(private dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private snackBar: MatSnackBar) {
+  }
 
-  openDialog(){ 
-    const dialogRef = this.dialog.open(PopUpReportComponent, {
-      width: '350px',
-      height: '350px'
+
+  openDialog(templateRef:any){ 
+    this.dialogRef = this.dialog.open(templateRef, {
+      width: '300px'
     });
-
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        this.sendFireObservation()
-      }
-    });
+  }
+  
+  onAccept(): void {
+    // this.snackBar.open('Report sent', 'Close', {
+    //   duration: 3000,
+    // });
+    this.sendFireObservation()
+    this.dialogRef.close();
+  }
+  
+  onCancel(): void {
+    this.dialogRef.close();
   }
 
   sendFireObservation(){

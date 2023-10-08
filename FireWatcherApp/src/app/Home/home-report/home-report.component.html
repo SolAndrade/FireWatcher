@@ -5,6 +5,14 @@
     <form class="container-col">
         <label for="observationsText">Observations</label>
         <textarea id="observationsText" name="observations" rows="8"> </textarea>
-        <input class="button button-submit" type="submit" value="Submit" (click)="openDialog()"/>
+        <input class="button button-submit" type="submit" value="Submit" (click)="openDialog(template)"/>
     </form>
+    <ng-template #template>
+        <div class="container-text">
+            <h1 >Are you sure you want to report this fire?</h1>
+            <p>Please, take this step seriously.</p>
+            <button class="button button-submit" (click)="onAccept()">Accept</button>
+            <button class="button" (click)="onCancel()">Cancel</button>
+        </div>
+    </ng-template>
 </div>

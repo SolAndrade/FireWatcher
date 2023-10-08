@@ -6,7 +6,6 @@ import { HomeMapComponent } from './Home/home-map/home-map.component';
 import { HomeInfoComponent } from './Home/home-info/home-info.component';
 import { HomeReportComponent } from './Home/home-report/home-report.component';
 import { PopUpStartComponent } from './Home/home-map/pop-up-start/pop-up-start.component';
-import { PopUpReportComponent } from './Home/home-report/pop-up-report/pop-up-report.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -19,22 +18,22 @@ import { InfoReportComponent } from './Home/home-info/home-info-section/home-inf
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HelpDialogComponent } from './header/help-dialog/help-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    NavbarComponent,
+    PopUpStartComponent,
     HomeMapComponent,
     HomeInfoComponent,
     HomeReportComponent,
-    PopUpStartComponent,
-    PopUpReportComponent,
-    HeaderComponent,
-    NavbarComponent,
     HomeInfoSectionComponent,
     InfoFactorsComponent,
     InfoHowToActComponent,
-    InfoPreventionComponent,
+    InfoPreventionComponent,  
     InfoReportComponent,
     HelpDialogComponent
   ],
@@ -45,8 +44,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     FormsModule,
     FontAwesomeModule,
     MatDialogModule,
+    MatSnackBarModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

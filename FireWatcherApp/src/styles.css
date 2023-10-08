@@ -45,7 +45,17 @@ a{
     padding: 0.5rem;
 }
 
+.container-text{
+    text-align: left;
+    padding: 0.5rem;
+}
+
 .flex-center{
     display: flex;
     justify-content: center;
+}
+
+mat-dialog-container{
+    position: absolute !important;
+    padding: 0.5rem;
 }
