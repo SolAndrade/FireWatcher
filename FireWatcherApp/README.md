@@ -1,27 +1,45 @@
-# FireWatcherApp
+# Fire Prevention Application - Angular (MockUp)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
+<p align="center">
+  <img src="./src/assets/logo.jpg" alt="FireWatcher Logo" width="200" height="200">
+</p>
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This is an Angular-based fire prevention application aimed at early detection and prevention of forest fires. The application provides real-time weather information, interactive fire risk maps, and resources to educate the community about fire prevention.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Real-time weather conditions visualization.
+- Interactive fire risk maps.
+- Tips and resources for fire prevention.
+- Real-time notifications for fire alerts.
 
-## Build
+## Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js and npm: Make sure you have Node.js and npm installed on your system. You can download them from [https://nodejs.org/](https://nodejs.org/).
 
-## Running unit tests
+## Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone this repository:
+```bash
+git clone https://github.com/SolAndrade/FireWatcher.git
+```
 
-## Running end-to-end tests
+2. Navigate to the application directory:
+```bash
+cd fire-prevention-app-angular
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Install the dependencies:
+```bash
+npm install
+```
 
-## Further help
+# Usage
+Start the application:
+```bash
+ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Open your web browser and visit http://localhost:4200/ to access the application.
