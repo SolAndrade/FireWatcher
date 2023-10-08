@@ -8,7 +8,7 @@ import { HomeService } from 'src/app/services/home.service';
 })
 export class HomeMapComponent {
   popup = false;
-  img = '../assets/img/risks.jpeg';
+  img = './assets/img/risks.jpeg';
   info: any;
   savedImg = '';
 
@@ -27,19 +27,19 @@ export class HomeMapComponent {
   }
 
   showRiskView(): void{
-    this.img = '../assets/img/risks.jpeg'
+    this.img = './assets/img/risks.jpeg'
     this.savedImg = '';
     this.info = null;
   }
 
   showFireActivityView(): void{
-    this.img = '../assets/img/activity.png'
+    this.img = './assets/img/activity.png'
     this.savedImg = '';
     this.info = null;
   }
 
   showInactiveFiresView(): void{
-    this.img = '../assets/img/inactive.png'
+    this.img = './assets/img/inactive.png'
     this.savedImg = '';
     this.info = null;
   }
